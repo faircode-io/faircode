@@ -1,322 +1,378 @@
 <html>
+	<head>
+		<title>Fair-code</title>
 
-<head>
-	<title>Fair-code</title>
+		<meta
+			name="description"
+			content="A sustainable software model for 2020 and beyond."
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+		/>
 
-	<meta name="description" content="A sustainable software model for 2020 and beyond.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@https://twitter.com/faircode-io" />
+		<meta name="twitter:creator" content="@faircode-io" />
+		<meta name="twitter:domain" content="https://faircode.io" />
+		<meta name="twitter:image" content="https://faircode.io/logo.png" />
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@https://twitter.com/faircode-io">
-	<meta name="twitter:creator" content="@faircode-io">
-	<meta name="twitter:domain" content="https://faircode.io">
-	<meta name="twitter:image" content="https://faircode.io/logo.png">
+		<meta property="og:site_name" content="Fair-code" />
+		<meta property="og:title" content="Fair-code" />
+		<meta property="og:url" content="https://faircode.io" />
+		<meta
+			property="og:description"
+			content="A sustainable software model for 2020 and beyond."
+		/>
+		<meta property="og:image" content="https://faircode.io/logo.png" />
 
-	<meta property="og:site_name" content="Fair-code">
-	<meta property="og:title" content="Fair-code">
-	<meta property="og:url" content="https://faircode.io">
-	<meta property="og:description" content="A sustainable software model for 2020 and beyond.">
-	<meta property="og:image" content="https://faircode.io/logo.png">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="canonical" href="https://faircode.io" />
 
-	<link rel="canonical" href="https://faircode.io" />
+		<style lang="css">
+			a,
+			a:visited {
+				color: #0400c1;
+				text-decoration: none;
+			}
 
-	<style lang="css">
-		a,
-		a:visited {
-			color: #0400c1;
-			text-decoration: none;
-		}
+			body {
+				background-color: #eae5e5;
+				color: #222;
+				font-family: "Martel", serif;
+			}
 
-		body {
-			background-color: #eae5e5;
-			color: #222;
-			font-family: 'Martel', serif;
-		}
+			h1 {
+				font-size: 4em;
+				font-weight: 300;
+				text-align: center;
+				margin: 0;
+			}
 
-		h1 {
-			font-size: 4em;
-			font-weight: 300;
-			text-align: center;
-			margin: 0;
-		}
+			h2 {
+				color: #222277;
+				font-size: 2em;
+				font-weight: 300;
+			}
 
-		h2 {
-			color: #222277;
-			font-size: 2em;
-			font-weight: 300;
-		}
+			h3 {
+				font-size: 1.5em;
+				font-weight: 300;
+			}
 
-		h3 {
-			font-size: 1.5em;
-			font-weight: 300;
-		}
+			ul li {
+				margin-top: 1em;
+			}
 
-		ul li {
-			margin-top: 1em;
-		}
+			.contact {
+				padding-bottom: 10em;
+			}
 
-		.contact {
-			padding-bottom: 10em;
-		}
+			.description .text {
+				font-size: 1.5em;
+			}
 
-		.description .text {
-			font-size: 1.5em;
-		}
+			.disclaimer {
+				color: #3b64ff;
+				font-size: 0.8em;
+				margin-left: 3em;
+			}
 
-		.disclaimer {
-			color: #3b64ff;
-			font-size: 0.8em;
-			margin-left: 3em;
-		}
+			.content-wrapper {
+				max-width: 800px;
+				margin: 6em auto 0 auto;
+			}
 
-		.content-wrapper {
-			max-width: 800px;
-			margin: 6em auto 0 auto;
-		}
+			.faq .question {
+				margin-top: 3em;
+			}
 
-		.faq .question {
-			margin-top: 3em;
-		}
+			.menu {
+				text-align: center;
+				padding-bottom: 3em;
+			}
 
-		.menu {
-			text-align: center;
-			padding-bottom: 3em;
-		}
+			.menu a {
+				margin-left: 1em;
+			}
 
-		.menu a {
-			margin-left: 1em;
-		}
+			.principle {
+				margin-top: 3em;
+			}
 
-		.principle {
-			margin-top: 3em;
-		}
+			.section {
+				margin-top: 8em;
+			}
+		</style>
+		<link
+			href="https://fonts.googleapis.com/css?family=Martel&display=swap"
+			rel="stylesheet"
+		/>
 
-		.section {
-			margin-top: 8em;
-		}
-	</style>
-	<link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-160034703-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-160034703-1");
+		</script>
+	</head>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160034703-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-160034703-1');
-	</script>
+	<body>
+		<div class="content-wrapper">
+			<h1>Fair-code</h1>
 
-</head>
-
-<body>
-	<div class="content-wrapper">
-		<h1>Fair-code</h1>
-
-		<div class="menu">
-			<a href="#principles">Principles</a>
-			<a href="#faq">FAQ</a>
-			<a href="#licenses">Licenses</a>
-			<a href="#contact">Contact</a>
-		</div>
-
-		<div class="description">
-			<div class="text">
-				Fair-code is not a software license. It describes a software model where software:
+			<div class="menu">
+				<a href="#principles">Principles</a>
+				<a href="#faq">FAQ</a>
+				<a href="#licenses">Licenses</a>
+				<a href="#contact">Contact</a>
 			</div>
-			<ul>
-				<li>is generally free to use and can be distributed by anybody</li>
-				<li>has its source code openly available</li>
-				<li>can be extended by anybody in public and private communities</li>
-				<li>is commercially restricted by its authors</li>
-			</ul>
-		</div>
 
-		<div class="section principles" id="principles">
-			<h2>Fair-code Principles</h2>
-
-			<div class="content">
-				<div class="principle">
-					<h3>Free and Sustainable</h3>
-					<div>
-						A sustainable software model for 2020 and beyond, we believe it is possible to respect the
-						principles of freedom without being ideological. The fair-code software model promotes the
-						use of profit as a means to continue development of software in a way that is compatible
-						with their author’s short and long-term economic intentions. Although there are many
-						successful projects which have traditionally worked as communities of unpaid professionals
-						and experts, fair-code attempts to create a level playing ground for software authors of
-						all backgrounds, including those that would like to make a living off of their work.
-					</div>
+			<div class="description">
+				<div class="text">
+					Fair-code is not a software license. It describes a software model
+					where software:
 				</div>
-
-				<div class="principle">
-					<h3>Open but Pragmatic</h3>
-					<div>
-						We desire open specifications, discussion, and collaboration. All of these are good practice
-						and help the software improve and the community grow.
-					</div>
-				</div>
-
-				<div class="principle">
-					<h3>Community meets Prosperity</h3>
-					<div>
-						We want people to make money off of their software, but we recognize that the community benefits
-						from a project's economic success. Within fair-code, creators have the exclusive right of
-						commercializing their work, ensuring long-term profitability. Companies that wish to
-						commercialize
-						the software can contact the author and form a business relationship that benefits both parties!
-					</div>
-				</div>
-
-				<div class="principle">
-					<h3>Meritocratic and Fair</h3>
-					<div>
-						We believe that authentic meritocracy is still possible in software, and that software authors
-						and contributors should be respected and have influence for their contributions to a project.
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="section faq" id="faq">
-
-			<h2>Fair-code FAQ</h2>
-
-			<div class="content">
-				<div class="question">
-					<h3>What does fair-code mean to me as a user of fair-code software?</h3>
-					<div>
-						Fair-code projects can be used totally free: privately, and even within a company with 10,000
-						employees. If they, however, want to commercialize it and charge people money for a, for
-						example,
-						hosted version or do consulting, restrictions may apply. The restrictions can be different
-						depending on the license and cost structure which the project uses.
-					</div>
-				</div>
-
-				<div class="question">
-					<h3>Why fair-code?</h3>
-					<div>
-						There is currently an economic disconnect between the people who create a project and put the
-						most work in and the people who want to make money using it. Fair-code can ensure that projects
-						are long term financially viable for their authors to continue and implement new features, or at
-						least somewhat economically advantageous to their authors should their software succeed. It’s
-						not that they should share all of the profit with the authors, but that fair-code attempts
-						to ensure profitable business relationships which benefits both persons and/or companies.
-					</div>
-				</div>
-
-				<div class="question">
-					<h3>What is “fair” about taking away the right to commercialize?</h3>
-					<div>
-						One way of making software more fair is by allowing developers to profit. Many companies today
-						invest resources into taking an existing project and copying the ongoing work of the project
-						creators; afterwards, creating and maintaining a hosted version using their code. In a fair
-						circumstance, should they benefit from using the software, they could add certain features,
-						fix bugs and support the community of users enjoying the product. In many cases they do, but
-						fair-code ensures that this can happen by bringing businesses to the negotiation table when it
-						comes to commercializing
-						software.
-					</div>
-				</div>
-
-				<div class="question">
-					<h3>How does fair-code relate to open-source or free software?</h3>
-					<div>
-						We see fair-code as an alternative model which addresses key concerns which open-source and free
-						software currently fail to address. We support the community at large, and it is strongly
-						encouraged that fair-code projects donate and contribute to likely more financially strained
-						free and open source siblings if possible. As fair-code is adopted by software projects, more
-						people who appreciate open-source and free software will have the financial means to support the
-						open-source projects that they rely on.
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section licenses" id="licenses">
-			<h2>Fair-code licenses</h2>
-
-			<div class="content">
-				<div>
-					The following existing licenses meet all the fair-code requirements and projects using any of them
-					can use the "fair-code" term.
-				</div>
-
 				<ul>
-					<li>
-						Commons Clause with any OSI approved open-source license<br />
-						<a href="https://commonsclause.com" target="_blank">https://commonsclause.com</a>
-					</li>
-					<li>
-						Confluent Community License<br />
-						<a href="https://www.confluent.io/confluent-community-license/" target="_blank">
-							https://www.confluent.io/confluent-community-license
-						</a>
-					</li>
-					<li>
-						Elastic License 2.0 (ELv2)<br />
-						<a href="https://www.elastic.co/licensing/elastic-license/" target="_blank">
-							https://www.elastic.co/licensing/elastic-license
-						</a>
-					</li>
-					<li>
-						Sustainable Use License<br />
-						<a href="https://github.com/n8n-io/n8n/blob/master/LICENSE.md" target="_blank">
-							https://github.com/n8n-io/n8n/blob/master/LICENSE.md
-						</a>
-					</li>
+					<li>is generally free to use and can be distributed by anybody</li>
+					<li>has its source code openly available</li>
+					<li>can be extended by anybody in public and private communities</li>
+					<li>is commercially restricted by its authors</li>
 				</ul>
 			</div>
 
-			<div class="disclaimer">
-				There is no affiliation between fair-code and any of the above organizations!
+			<div class="section principles" id="principles">
+				<h2>Fair-code Principles</h2>
+
+				<div class="content">
+					<div class="principle">
+						<h3>Free and Sustainable</h3>
+						<div>
+							A sustainable software model for 2020 and beyond, we believe it is
+							possible to respect the principles of freedom without being
+							ideological. The fair-code software model promotes the use of
+							profit as a means to continue development of software in a way
+							that is compatible with their author’s short and long-term
+							economic intentions. Although there are many successful projects
+							which have traditionally worked as communities of unpaid
+							professionals and experts, fair-code attempts to create a level
+							playing ground for software authors of all backgrounds, including
+							those that would like to make a living off of their work.
+						</div>
+					</div>
+
+					<div class="principle">
+						<h3>Open but Pragmatic</h3>
+						<div>
+							We desire open specifications, discussion, and collaboration. All
+							of these are good practice and help the software improve and the
+							community grow.
+						</div>
+					</div>
+
+					<div class="principle">
+						<h3>Community meets Prosperity</h3>
+						<div>
+							We want people to make money off of their software, but we
+							recognize that the community benefits from a project's economic
+							success. Within fair-code, creators have the exclusive right of
+							commercializing their work, ensuring long-term profitability.
+							Companies that wish to commercialize the software can contact the
+							author and form a business relationship that benefits both
+							parties!
+						</div>
+					</div>
+
+					<div class="principle">
+						<h3>Meritocratic and Fair</h3>
+						<div>
+							We believe that authentic meritocracy is still possible in
+							software, and that software authors and contributors should be
+							respected and have influence for their contributions to a project.
+						</div>
+					</div>
+				</div>
 			</div>
 
-		</div>
+			<div class="section faq" id="faq">
+				<h2>Fair-code FAQ</h2>
 
+				<div class="content">
+					<div class="question">
+						<h3>
+							What does fair-code mean to me as a user of fair-code software?
+						</h3>
+						<div>
+							Fair-code projects can be used totally free: privately, and even
+							within a company with 10,000 employees. If they, however, want to
+							commercialize it and charge people money for a, for example,
+							hosted version or do consulting, restrictions may apply. The
+							restrictions can be different depending on the license and cost
+							structure which the project uses.
+						</div>
+					</div>
 
-		<div class="section contact" id="contact">
-			<h2>Contact</h2>
+					<div class="question">
+						<h3>Why fair-code?</h3>
+						<div>
+							There is currently an economic disconnect between the people who
+							create a project and put the most work in and the people who want
+							to make money using it. Fair-code can ensure that projects are
+							long term financially viable for their authors to continue and
+							implement new features, or at least somewhat economically
+							advantageous to their authors should their software succeed. It’s
+							not that they should share all of the profit with the authors, but
+							that fair-code attempts to ensure profitable business
+							relationships which benefits both persons and/or companies.
+						</div>
+					</div>
 
-			<div class="content">
-				<div>
-					If you have fair-code related questions or you want to be involved contact us.<br />
-					We love to get feedback to improve fair-code even further!<br />
-					<small>(List in alphabetical order)</small>
+					<div class="question">
+						<h3>
+							What is “fair” about taking away the right to commercialize?
+						</h3>
+						<div>
+							One way of making software more fair is by allowing developers to
+							profit. Many companies today invest resources into taking an
+							existing project and copying the ongoing work of the project
+							creators; afterwards, creating and maintaining a hosted version
+							using their code. In a fair circumstance, should they benefit from
+							using the software, they could add certain features, fix bugs and
+							support the community of users enjoying the product. In many cases
+							they do, but fair-code ensures that this can happen by bringing
+							businesses to the negotiation table when it comes to
+							commercializing software.
+						</div>
+					</div>
+
+					<div class="question">
+						<h3>How does fair-code relate to open-source or free software?</h3>
+						<div>
+							We see fair-code as an alternative model which addresses key
+							concerns which open-source and free software currently fail to
+							address. We support the community at large, and it is strongly
+							encouraged that fair-code projects donate and contribute to likely
+							more financially strained free and open source siblings if
+							possible. As fair-code is adopted by software projects, more
+							people who appreciate open-source and free software will have the
+							financial means to support the open-source projects that they rely
+							on.
+						</div>
+					</div>
 				</div>
-
-				<ul>
-					<li>
-						<a href="https://www.linkedin.com/in/janoberhauser/" target="_blank">
-							<i>Jan Oberhauser</i>&nbsp;&nbsp;(Berlin, Germany)
-						</a><br />
-						CEO and creator of <a href="https://n8n.io" target="_blank">n8n.io</a><br />
-						<a href="mailto:jan@faircode.io">jan@faircode.io</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/kenneth-malac-b4b5666a/" target="_blank">
-							<i>Kenneth Malac</i>&nbsp;&nbsp;(San Jose, USA)
-						</a><br />
-						CEO of <a href="https://paradigminteractive.io" target="_blank">Paradigm Interactive, Inc.</a><br />
-						<a href="mailto:kenneth@faircode.io">kenneth@faircode.io</a>
-					</li>
-				</ul>
-
-				<div>
-					Or best via Twitter <a href="https://twitter.com/faircode_io" target="_blank">(@faircode_io)</a> and
-					Github <a href="https://github.com/faircode-io/faircode" target="_blank">(faircode-io)</a>!
-				</div>
-
 			</div>
 
+			<div class="section licenses" id="licenses">
+				<h2>Fair-code licenses</h2>
+
+				<div class="content">
+					<div>
+						The following existing licenses meet all the fair-code requirements
+						and projects using any of them can use the "fair-code" term.
+					</div>
+
+					<ul>
+						<li>
+							Commons Clause with any OSI approved open-source license<br />
+							<a href="https://commonsclause.com" target="_blank"
+								>https://commonsclause.com</a
+							>
+						</li>
+						<li>
+							Confluent Community License<br />
+							<a
+								href="https://www.confluent.io/confluent-community-license/"
+								target="_blank"
+							>
+								https://www.confluent.io/confluent-community-license
+							</a>
+						</li>
+						<li>
+							Elastic License 2.0 (ELv2)<br />
+							<a
+								href="https://www.elastic.co/licensing/elastic-license/"
+								target="_blank"
+							>
+								https://www.elastic.co/licensing/elastic-license
+							</a>
+						</li>
+						<li>
+							Sustainable Use License<br />
+							<a
+								href="https://github.com/n8n-io/n8n/blob/master/LICENSE.md"
+								target="_blank"
+							>
+								https://github.com/n8n-io/n8n/blob/master/LICENSE.md
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="disclaimer">
+					There is no affiliation between fair-code and any of the above
+					organizations!
+				</div>
+			</div>
+
+			<div class="section contact" id="contact">
+				<h2>Contact</h2>
+
+				<div class="content">
+					<div>
+						If you have fair-code related questions or you want to be involved
+						contact us.<br />
+						We love to get feedback to improve fair-code even further!<br />
+						<small>(List in alphabetical order)</small>
+					</div>
+
+					<ul>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/janoberhauser/"
+								target="_blank"
+							>
+								<i>Jan Oberhauser</i>&nbsp;&nbsp;(Berlin, Germany) </a
+							><br />
+							CEO and creator of
+							<a href="https://n8n.io" target="_blank">n8n.io</a><br />
+							<a href="mailto:jan@faircode.io">jan@faircode.io</a>
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/kenneth-malac-b4b5666a/"
+								target="_blank"
+							>
+								<i>Kenneth Malac</i>&nbsp;&nbsp;(San Jose, USA) </a
+							><br />
+							CEO of
+							<a href="https://paradigminteractive.io" target="_blank"
+								>Paradigm Interactive, Inc.</a
+							><br />
+							<a href="mailto:kenneth@faircode.io">kenneth@faircode.io</a>
+						</li>
+					</ul>
+
+					<div>
+						Or best via Twitter
+						<a href="https://twitter.com/faircode_io" target="_blank"
+							>(@faircode_io)</a
+						>
+						and Github
+						<a href="https://github.com/faircode-io/faircode" target="_blank"
+							>(faircode-io)</a
+						>!
+					</div>
+				</div>
+			</div>
 		</div>
-
-	</div>
-
-</body>
-
+	</body>
 </html>
