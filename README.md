@@ -7,4 +7,5 @@ Fair-code is not a software license. It describes a software model where softwar
 - can be extended by anybody in public and private communities
 - is commercially restricted by its authors
 
-More ressources can be found at [https://faircode.io](https://faircode.io)
+
+More resources can be found at [https://faircode.io](https://faircode.io)
